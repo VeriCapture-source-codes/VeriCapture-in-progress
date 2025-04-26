@@ -112,7 +112,10 @@ function Register() {
               {isSubmitting ? 'Registering...' : 'Register'}
             </button>
           </div>
+          <span>Forgot password? </span><a href='./request-password-reset-otp'>change password</a>
           {message && <p style={{ marginTop: '1rem', color: 'crimson' }}>{message}</p>}
+
+          
         </form>
       </div>
       <div className="col-3"></div>
