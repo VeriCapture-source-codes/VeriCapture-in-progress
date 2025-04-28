@@ -11,7 +11,7 @@ import Login from './Login';
 import UserProfile from './UserProfile';
 import RequestPasswordOtp from './RequestPasswordOtp';
 import VerifyResetOtp from './VerifyResetOtp';
-
+import CreateProfile from './CreateProfile'; // Adjust path as needed
 
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/profile" element={<UserProfile />} />
         <Route path="/request-password-reset-otp" element={<RequestPasswordOtp />} />
         <Route path="/verify-otp" element={<VerifyResetOtp />} />
-
+        <Route path="/createprofile" element={<CreateProfile />} />
 
 
       </Routes>
