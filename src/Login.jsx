@@ -72,7 +72,7 @@ function Login() {
   };
 
   return (
-    <div style={{ padding: '2rem' }}>
+    <div style={{ padding: '0.5rem 0.9rem' }}>
     <div className="login-container">
       <div className="login-form">
          <img
@@ -88,16 +88,16 @@ function Login() {
             }}
           />
         <a className='register' href="./register">Create an accout</a>
-        <h2 style={{ fontSize: '1.9rem', fontWeight: '700', marginLeft: '15rem'}}>Login</h2>
+        <h2 style={{ fontSize: '1.9rem', fontWeight: '700', marginLeft: '20rem'}}>Login</h2>
         <form onSubmit={handleSubmit} className="form-group2">
-          <p style={{ fontSize: '2rem', fontWeight: '800', marginLeft: '9.5rem'}}>Welcome Back</p>
-          <span style={{ fontSize: '0.9rem', fontWeight: '600', marginLeft: '9.5rem', width: '40rem'}}>
+          <p style={{ fontSize: '2rem', fontWeight: '800', marginLeft: '-3.5rem', width: '40rem' }}>Welcome Back</p>
+          <span style={{ fontSize: '1.2rem', fontWeight: '600', marginLeft: '5.9rem', width: '40rem'}}>
             Welcome Back, Please enter your detail
           </span>
         
          <div className="social-login2">
            <a href="#" className="google-btn2">
-             <i className="fab fa-google"style={{ backgroundColor: 'blue' }} ></i> Sign up with Google
+           <i className="fab fa-google"style={{ backgroundColor: 'blue' }} ></i> <span>Sign up with Google</span>
            </a>
 
             <div className="social-icons-row2">
@@ -137,7 +137,7 @@ function Login() {
              src={showPassword ? bxShow : bxHide}
              alt="Toggle Visibility"
              onClick={togglePasswordVisibility}
-             className="password-toggle-icon"
+             className="password-toggle-icon2"
             />
          </div>
  {/* Checkbox */}
@@ -173,11 +173,11 @@ function Login() {
           alt="Login Illustration"
           className="img-fluid"
           style={{
-            maxWidth: '36rem',
-            height: '80rem',
+            maxWidth: '37rem',
+            height: '58.3rem',
             border: '1px solid #ddd',
             borderRadius: '8px',
-            marginLeft: '14.2rem',
+            marginLeft: '20.6rem',
           }}
         />
       </div>

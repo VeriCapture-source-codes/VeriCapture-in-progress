@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  width: 95.5vw;
+  min-height: 80vh;
+  width: 97vw;
   background: linear-gradient(to right, #f8f9fa, #e9ecef);
   padding: 0rem;
   border: 1px solid #ccc;
@@ -12,7 +12,7 @@
 
 .login-form {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .login-image {
@@ -29,13 +29,16 @@
 .vericapture-logo2 {
   background-color: rgb(248, 246, 246);
   position: relative;
-  top: -60px;
+  top: 55px;
   right: 20px;
 }
 .register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  top: -150px;
-  left: 130px;
+  top: -55px;
+  left: 100%;
   font-size: 18px;
   color: #14ffa5;
   text-decoration: none;
@@ -47,9 +50,7 @@
 h2 {
   margin-bottom: 1.5rem;
   margin-right: 0px;
-  margin-left: 80px;
-  margin-top: 90px;
-  font-size: 2rem;
+  margin-top: 0px;
   color: #000;
 }
 
@@ -74,19 +75,26 @@ a.google-btn2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 0px;
+  left: -15px;
   gap: 0.5rem;
   padding: 1.1rem 2rem;
   width: 23rem;
   background-color: #f5f5f5;
   border-radius: 5px;
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: bold;
   font-size: 1.1rem;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+ .google-btn2 span{
+  display: flex;
+  color: #000;
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+  left: 0px;
+ }
 .google-btn2:hover {
   background-color: #e0e0e0;
   transform: scale(1.05);
@@ -105,7 +113,9 @@ background-clip: text;
 color: transparent;
 -webkit-text-fill-color: transparent;
 }
-
+  i.fa-google{
+ margin-left: 25px;
+ }
 /* OPTIONAL: little rotation on hover */
 .google-btn2:hover i.fa-google {
   transform: rotate(10deg);
@@ -116,20 +126,21 @@ color: transparent;
   justify-content: center;
   gap: 0.2rem;
   margin-left: 65px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 a.media-button2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 76px;
+  padding: 18px 76px;
   border-radius: 8px;
-  margin-top: 2px;
+  position: relative;
+  top: 0px;
+  left: 35px;
   text-decoration: none;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   font-size: 2rem;
-  color: #0b1cb9;
 }
 
 a.media-button2:hover {
@@ -147,11 +158,13 @@ a.media-button2:hover {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
+ 
 }
 
 i.fa-facebook {
   width: 30px;
   height: 30px;
+  color: #0460f5;
 }
 .x-icon {
   width: 30px;
@@ -159,8 +172,8 @@ i.fa-facebook {
 }
 .line-container2 {
   position: relative;
-  width: 70%;
-  margin: 4rem 0 0 8.8rem;
+  width: 95%;
+  margin: 3rem 0 0 7.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,12 +203,12 @@ i.fa-facebook {
  .login-form input[type="text"],
  .login-form input[type="email"],
  .login-form input[type="password"] {
-   width: 93%;
-   padding: 1.2rem;
+   width: 23rem;
+   padding: 1.2rem 1rem;
    margin-top: 1.3rem;
    border: 1px solid #ccc;
    border-radius: 5px;
-   margin-left: 6rem;
+   margin-left: 5.2rem;
    display: block;
    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
  }
@@ -210,8 +223,8 @@ i.fa-facebook {
 .password-wrapper {
   position: relative;
   width: 100%;
-  margin-left: 0rem;
-  margin-top: 0.3rem;
+  left: 0rem;
+  top: 0rem;
 }
 
 .password-wrapper input {
@@ -222,10 +235,9 @@ i.fa-facebook {
   border-radius: 5px;
 }
 
-.password-toggle-icon {
+.password-wrapper .password-toggle-icon2 {
   position: absolute;
-  right: 0px;
-  left: 420px;
+  left: 410px;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
@@ -240,6 +252,7 @@ i.fa-facebook {
 }
  input[type="checkbox"]{
   display: block;
+  margin: 0 -35px;
 }
  label{
   display: block;
@@ -248,10 +261,10 @@ i.fa-facebook {
   position: relative;
   top: 0px;
   right: 0px;
-  left: 52px;
+  left: 72px;
 }
  span{
-  margin-top: 8px;
+  margin-top: 9px;
   margin-right: 60px;
 }
 .forgot{
@@ -260,13 +273,11 @@ i.fa-facebook {
   position: relative;
   top: -65px;
   right: 0px;
-  left: 25px;
+  left: 10px;
 }
 .login-form a {
   color: #00fc9b;
   text-decoration: none;
-  margin-left: 0rem;
-  margin-right: 0rem;
 }
 
 .login-form a:hover {
@@ -274,7 +285,7 @@ i.fa-facebook {
 }
 
 .login-form button {
-  width: 93%;
+  width: 22.7rem;
   padding: 1.2rem;
   background-color: black;
   color: white;
@@ -282,8 +293,9 @@ i.fa-facebook {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 6rem;
-  margin-top: 0rem;
+  position: relative;
+  top: -50px;
+  left: 87px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 

@@ -83,7 +83,7 @@ function Register() {
   };
 
   return (
-  <div style={{ padding: '2rem' }} className='main-container'>
+  <div style={{ padding: '0.5rem'}} className='main-container'>
    <div className="register-container">
    <div class="responsive-row">
      <img
@@ -92,10 +92,10 @@ function Register() {
         className="img-fluid"
         style={{
           maxWidth: '37rem',
-          height: '92.2rem',
+          height: '63rem',
           border: '1px solid #ddd',
           borderRadius: '8px',
-          marginRight: '6rem',
+          marginRight: '10.9rem',
         }}
       />
      <div className="register-form">
@@ -108,12 +108,12 @@ function Register() {
         height: 'auto',
         border: 'none',
         borderRadius: '8px',
-        margin: '-175px 300px 0px 0px', // setting top margin negative
+        margin: '-70px 300px 0px 0px', // setting top margin negative
         }}
       />
       <h2>Register</h2>
       <form onSubmit={handleSubmit} className="form-group">
-        <span style={{ fontSize: '1.2rem', marginLeft: '3rem', marginRight: '6rem' }}>
+        <span style={{ fontSize: '1.2rem', marginLeft: '0rem', marginRight: '9rem' }}>
           Already have an account? <a className='login' href="./login">Login</a>
         </span>
         {/* First + Last name side by side */}
@@ -170,13 +170,12 @@ function Register() {
         </div>
         <div style={{ 
           display: 'flex',
-          flexDirection: 'row', 
-          marginLeft: '1rem',   
+          flexDirection: 'row',  
           marginTop: '0rem',
           gap: '0.5rem'            
           }}>
           {/* Checkbox */}
-          <div style={{ fontSize: '0.2rem', marginLeft: '0rem' }} className='check-to'>
+          <div style={{ fontSize: '0.2rem', marginRight: '0rem' }} className='check-to'>
             <label>
               <input
                type="checkbox"
@@ -189,7 +188,7 @@ function Register() {
           </div>
 
           {/* Password link */}
-          <div style={{ fontSize: '0.6rem', marginRight: '0rem', marginLeft: '2.5rem' }} className='forgot-password'>
+          <div style={{ fontSize: '0.6rem', marginRight: '0rem', marginLeft: '0.2rem' }} className='forgot-password'>
             <span>Forgot password? </span>
             <a href="./request-password-reset-otp">Change Password</a>
           </div>
@@ -204,7 +203,7 @@ function Register() {
          </p>
           )}
         </div>
-        <div style={{ marginTop: '1rem' }}>
+        <div style={{ marginTop: '0rem' }}>
           <button type="submit" disabled={isSubmitting}>
            {isSubmitting ? 'Registering...' : 'Register'}
           </button>
@@ -213,7 +212,6 @@ function Register() {
           <div className="line2"></div>
           <div className="or-text">or sign up with</div>
         </div>
-
 
         <div className="social-login">
           <a href="#" className="google-btn">
