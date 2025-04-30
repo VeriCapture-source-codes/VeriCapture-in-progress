@@ -83,10 +83,10 @@ function Register() {
   };
 
   return (
-  <div style={{ padding: '2rem' }}>
-  <div className="register-container">
-   <div className="register-image">
-      <img
+  <div style={{ padding: '2rem' }} className='main-container'>
+   <div className="register-container">
+   <div class="responsive-row">
+     <img
         src={image6}
         alt="Login Illustration"
         className="img-fluid"
@@ -98,9 +98,8 @@ function Register() {
           marginRight: '6rem',
         }}
       />
-    </div>
-    <div className="register-form">
-      <img
+     <div className="register-form">
+     <img
         src={vericapture}
         alt="vericapture logo"
         className="vericapture-logo"
@@ -171,10 +170,10 @@ function Register() {
         </div>
         <div style={{ 
           display: 'flex',
-          flexDirection: 'row',  // Stacks children vertically
-          marginLeft: '1rem',    // Maintains your indentation
+          flexDirection: 'row', 
+          marginLeft: '1rem',   
           marginTop: '0rem',
-          gap: '0.5rem'            // Adds consistent spacing between items
+          gap: '0.5rem'            
           }}>
           {/* Checkbox */}
           <div style={{ fontSize: '0.2rem', marginLeft: '0rem' }} className='check-to'>
@@ -199,7 +198,7 @@ function Register() {
          {message && (
            <p style={{ 
             color: 'crimson',
-            margin: 0             // Removes default <p> margins
+            margin: 0            
            }}>
             {message}
          </p>
@@ -240,6 +239,7 @@ function Register() {
        </div>
      </form>
    </div>
+  </div>
  </div>
 </div>
  );
