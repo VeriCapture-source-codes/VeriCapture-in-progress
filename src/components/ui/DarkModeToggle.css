@@ -1,0 +1,48 @@
+:root {
+    --text-color: #333;
+  }
+  .dark-mode-toggle {
+    --toggle-width: 50px;
+    --toggle-height: 24px;
+    --toggle-padding: 2px;
+    --thumb-size: calc(var(--toggle-height) - var(--toggle-padding) * 2);
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    gap: 8px;
+  }
+  
+  .toggle-track {
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    border-radius: 100px;
+    background: #e0e0e0;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  .dark .toggle-track {
+    background: #424242;
+  }
+  .toggle-track {
+    background: var(--light-bg, #e0e0e0);
+    --toggle-width: 50px;
+    --toggle-height: 24px;
+  }
+  .dark .toggle-track {
+    background: var(--dark-bg, #424242);
+    --toggle-width: 50px;
+    --toggle-height: 24px;
+  }
+
+  .toggle-thumb {
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
+  }
+  .dark .toggle-thumb {
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.4));
+  }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // navigate
 import { apiRequest } from './utils/api'; // your fetch based apiRequest
-import image6 from './assets/image6.png'; // Import image
-import bxHide from './assets/bx-hide.png'; // Import image
-import bxShow from './assets/bx-show.png'; // Import image
+import image6 from './assets/image/image6.png'; // Import image
+import bxHide from './assets/image/bx-hide.png'; // Import image
+import bxShow from './assets/image/bx-show.png'; // Import image
 import './Login.css'; // Import CSS file for styling
-import vericapture from './assets/vericapture.png'; // Import image
+import vericapture from './assets/image/vericapture.png'; // Import image
 
 
 function Login() {
@@ -142,21 +142,21 @@ function Login() {
          </div>
  {/* Checkbox */}
  <div style={{ fontSize: '0.6rem', marginLeft: '3rem' }} className='check-to2'>
-            <label>
-              <input
-               type="checkbox"
-               name="termsAccepted"
-               checked={form.termsAccepted}
-               onChange={handleChange}
-              />{' '}
-             <span>Keep me signed in</span>
-           </label>
-          </div>
+    <label>
+      <input
+        type="checkbox"
+        name="termsAccepted"
+        checked={form.termsAccepted}
+        onChange={handleChange}
+      />{' '}
+      <span>Keep me signed in</span>
+    </label>
+  </div>
 
-          {/* Password link */}
-          <div style={{ fontSize: '0.8rem', marginLeft: '21.3rem' }} className='forgot'>
-            <a href="./request-password-reset-otp">Forgot password</a>
-          </div>
+  {/* Password link */}
+  <div style={{ fontSize: '0.8rem', marginLeft: '21.3rem' }} className='forgot'>
+    <a href="./request-password-reset-otp">Forgot password</a>
+  </div>
 
          <div style={{ marginTop: '1rem' }}>
            <button type="submit" disabled={isSubmitting}>

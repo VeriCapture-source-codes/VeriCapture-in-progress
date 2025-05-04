@@ -2,13 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // For navigation
 import { apiRequest } from './utils/api'; // Your API request utility
 import './CreateProfile.css'; // We'll extract the CSS into a separate file
-import house from './assets/House.png';
-import explore from './assets/Explore.png';
-import notification from './assets/notification.png';
-import user02 from './assets/user02.png';
-import frame121 from './assets/frame121.png';
-import property1moon from './assets/property1moon.png';
-import property1sun from './assets/Property1sun.png';
+import house from './assets/image/House.png';
+import explore from './assets/image/Explore.png';
+import notification from './assets/image/notification.png';
+import user02 from './assets/image/user02.png';
+import frame121 from './assets/image/frame121.png';
+import property1moon from './assets/image/property1moon.png';
+import property1sun from './assets/image/Property1sun.png';
 
 const Profile = () => {
   // State for user data

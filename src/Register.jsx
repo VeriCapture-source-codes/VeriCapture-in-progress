@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // import useNavigate
 import { apiRequest } from './utils/api';
 import './Register.css'; // Import CSS file for styling
-import image6 from './assets/image6.png'; // Import image
-import bxHide from './assets/bx-hide.png'; // Import image
-import bxShow from './assets/bx-show.png'; // Import image
-import vericapture from './assets/vericapture.png';
+import image6 from './assets/image/image6.png'; // Import image
+import bxHide from './assets/image/bx-hide.png'; // Import image
+import bxShow from './assets/image/bx-show.png'; // Import image
+import vericapture from './assets/image/vericapture.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 

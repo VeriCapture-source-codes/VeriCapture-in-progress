@@ -1,38 +1,69 @@
-const baseUrl = 'http://localhost:5000/api/v1'; // your base API URL
+const baseUrl = 'http://localhost:5000/api/v1';
 
-export async function apiRequest({ method = 'GET', route, body = null, formData = null }) {
+export async function apiRequest({ 
+  method = 'GET', 
+  route, 
+  body = null, 
+  formData = null 
+}) {
+  // Validate route parameter
+  if (!route || typeof route !== 'string') {
+    throw new Error('Route must be a valid string');
+  }
+
+  // Ensure route starts with slash
+  const normalizedRoute = route.startsWith('/') ? route : `/${route}`;
+
   try {
     const options = {
       method: method.toUpperCase(),
-      credentials: 'include', // for sending cookies
-      headers: {}, // We'll set headers conditionally
+      credentials: 'include',
+      headers: {},
     };
 
+    // Handle FormData
     if (formData) {
-      options.body = formData; 
-      // Don't set Content-Type manually for FormData — browser will handle boundary!
-    } else if (body) {
+      options.body = formData;
+    } 
+    // Handle JSON body
+    else if (body) {
       options.headers['Content-Type'] = 'application/json';
       options.headers['Accept'] = 'application/json';
       options.body = JSON.stringify(body);
     }
 
-    const response = await fetch(`${baseUrl}${route}`, options);
+    const response = await fetch(`${baseUrl}${normalizedRoute}`, options);
+    
+    // Handle non-JSON responses
+    const contentType = response.headers.get('content-type');
+    const isJson = contentType?.includes('application/json');
+    
+    const data = isJson ? await response.json() : await response.text();
 
-    const data = await response.json();
+    if (!response.ok) {
+      return {
+        success: false,
+        message: data.message || `Request failed with status ${response.status}`,
+        data: null,
+        status: response.status,
+        error: data.error || true,
+      };
+    }
 
     return {
-      success: response.ok,
-      message: data.message || (response.ok ? 'Request successful' : 'Request failed'),
-      data: data || null,
-      statusCode: response.status,
+      success: true,
+      message: data.message || 'Request successful',
+      data: data.data || data, // Handle different response structures
+      status: response.status,
     };
   } catch (error) {
+    console.error('API request failed:', error);
     return {
       success: false,
-      message: error.message || 'Something went wrong',
+      message: 'Network error: Failed to connect to server',
       data: null,
-      statusCode: null,
+      status: null,
+      error: true,
     };
   }
 }

@@ -1,0 +1,96 @@
+:root {
+    --map-bg: #ffffff;
+    --stats-bg: #f8f9fa;
+    --highlight-color: #007bff;
+    --button-bg: #007bff;
+    --text-color: #333333;
+  }
+  
+  .dark-mode {
+    --map-bg: #121212;
+    --stats-bg: #1a1a1a;
+    --highlight-color: #4dabf7;
+    --button-bg: #1c7ed6;
+    --text-color: #ffffff;
+  }
+/* Map Section Styles */
+.map-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .map-section.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .map-title {
+    font-size: 2.5rem;
+    color: inherit;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .highlight.dark {
+    color: #4dabf7;
+  }
+  
+  .map-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .map-button.dark {
+    background-color: #1c7ed6;
+  }
+  
+  .map-button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .map-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stats Section Styles */
+  .stats-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .stats-section.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .stats-title {
+    font-size: 3rem;
+    color: inherit;
+  }
+  
+  .stats-subtitle {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: inherit;
+  }
+  
+  .stats-image {
+    max-width: 600px;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+  }

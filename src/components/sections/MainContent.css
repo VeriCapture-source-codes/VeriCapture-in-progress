@@ -1,0 +1,197 @@
+/* Base Styles */
+#main-content {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #d4d4d4; /* Fallback color */
+  background-image: url("../../assets/image/image 2@2x.png"); /* Corrected path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 96vw;
+  min-height: 135vh; /* Changed from height to min-height */
+  margin: 110px 0 0 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Optional: Add overlay for better text readability */
+#main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+  z-index: -1;
+  border-radius: 25px;
+}
+
+/* For dark mode support */
+.dark-mode #main-content {
+  background-color: #2d2d2d;
+}
+
+.dark-mode #main-content::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+  
+  /* Checkbox */
+  .styled-checkbox.dark {
+    border-color: #666;
+  }
+  .styled-checkbox.dark:checked {
+    background-color: #4dabf7;
+    border-color: #4dabf7;
+  }
+  
+  .btn.dark {
+    background-color: #7a7a7a;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  /* Buttons */
+  .crime-scene-btn {
+    background-color: #c92a2a;
+    display: inline-block;
+    position: relative;
+    top: -16.7rem;
+    left: 39%;
+  }
+  
+  .explore-button.dark {
+    background-color: #1c7ed6;
+  }
+  
+  .login-button.dark {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  /* Text */
+  .main-content.dark-mode .main-heading,
+  .main-content.dark-mode .subheading,
+  .main-content.dark-mode .location-indicator {
+    color: #f8f9fa;
+  }
+  
+  /* Images */
+  .decorative-arrow{
+    filter: invert(var(--image-invert, 0%));
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 81%;
+  }
+  
+  .main-content.dark-mode .decorative-arrow {
+    --image-invert: 80%;
+  }
+
+  .main-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d4d4d4;
+    background-image: url("/assets/image/image 2@2x.png");
+    background-size: cover;
+    position: relative;
+    width: 96vw;
+    height: 115vh;
+    margin-left: 20px;
+    margin-top: 110px;
+    margin-bottom: -80px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .main-heading {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .subheading {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+  }
+  
+  .decorative-arrow {
+    margin: 2rem 0;
+    background-color: rgb(151, 151, 151);
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  .crime-scene-btn {
+    background: red;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 25px;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  
+  .location-indicator {
+    font-size: 13px;
+    position: relative;
+    top: -17.7rem;
+    left: 39%;
+    margin: 0.5rem 0;
+  }
+  
+  .action-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .explore-button,
+  .login-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+  
+  .explore-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .login-button {
+    background: #fff;
+    color: #000;
+  }
+  
+  .button-icon {
+    width: 16px;
+    height: 16px;
+  }

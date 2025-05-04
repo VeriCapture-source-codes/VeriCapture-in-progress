@@ -1,0 +1,152 @@
+:root {
+    --subcontent-bg: #ffffff;
+    --tweetcard-bg: #ffffff;
+    --highlight-color: #007bff;
+    --button-bg: #0159b8;
+    --text-color: #333333;
+  }
+  
+  .dark-mode {
+    --subcontent-bg: #1a1a1a;
+    --tweetcard-bg: #1e1e1e;
+    --highlight-color: #4dabf7;
+    --button-bg: #1c7ed6;
+    --text-color: #f8f9fa;
+  }
+  
+/* TweetCard Styles */
+.tweet-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tweet-card .dark-mode {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+  }
+  
+  .tweet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .user-info {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+   .user-meta h2{
+    font-size: 1.2rem;
+    position: relative;
+    right: 4.5rem;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .meta-details .meta-time{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: -80%;
+    left: 10rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .tweet-card.dark-mode .meta-details {
+    color: #aaa;
+  }
+  
+  .category-tag {
+    background-color: #dacc0e;
+    color: #000;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    border: none;
+  }
+  
+  .category-tag:hover {
+    background-color: #fcc419;
+  }
+  
+ .meta-details {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-right: 0.5rem;
+  }
+  .meta-details .location img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3.25rem;
+  }
+
+  .tweet-text {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .location-reference {
+    color: #007bff;
+    font-weight: 500;
+  }
+  
+  .location-reference.dark {
+    color: #4dabf7;
+  }
+  
+  .tweet-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .tweet-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .tweet-card.dark-mode .tweet-actions {
+    border-top-color: #333;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .action-button.dark {
+    color: #aaa;
+  }
+  
+  .action-button:hover {
+    color: #007bff;
+  }
+  
+  .tweet-card.dark-mode .action-button:hover {
+    color: #4dabf7;
+  }
+
+  .comments-section {
+    margin-top: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+  }

@@ -1,0 +1,15 @@
+:root {
+    --map-bg: #ffffff;
+    --stats-bg: #f8f9fa;
+    --highlight-color: #007bff;
+    --button-bg: #007bff;
+    --text-color: #333333;
+  }
+  
+  .dark-mode {
+    --map-bg: #121212;
+    --stats-bg: #1a1a1a;
+    --highlight-color: #4dabf7;
+    --button-bg: #1c7ed6;
+    --text-color: #ffffff;
+  }
