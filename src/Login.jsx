@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // navigate
 import { apiRequest } from './utils/api'; // your fetch based apiRequest
-import image6 from './assets/image/image6.png'; // Import image
-import bxHide from './assets/image/bx-hide.png'; // Import image
-import bxShow from './assets/image/bx-show.png'; // Import image
 import './Login.css'; // Import CSS file for styling
-import vericapture from './assets/image/vericapture.png'; // Import image
+
 
 
 function Login() {
@@ -76,7 +73,7 @@ function Login() {
     <div className="login-container">
       <div className="login-form">
          <img
-            src={vericapture}
+            src="/DataForVericapture2.png"
             alt="vericapture logo"
             className="vericapture-logo2"
             style={{
@@ -88,10 +85,10 @@ function Login() {
             }}
           />
         <a className='register' href="./register">Create an accout</a>
-        <h2 style={{ fontSize: '1.9rem', fontWeight: '700', marginLeft: '20rem'}}>Login</h2>
+        <h2 style={{ fontSize: '1.9rem', fontWeight: '700', marginLeft: '21rem'}}>Login</h2>
         <form onSubmit={handleSubmit} className="form-group2">
-          <p style={{ fontSize: '2rem', fontWeight: '800', marginLeft: '-3.5rem', width: '40rem' }}>Welcome Back</p>
-          <span style={{ fontSize: '1.2rem', fontWeight: '600', marginLeft: '5.9rem', width: '40rem'}}>
+          <p style={{ fontSize: '2rem', fontWeight: '800', marginLeft: '-2.5rem', width: '40rem' }}>Welcome Back</p>
+          <span style={{ fontSize: '1.2rem', fontWeight: '600', marginLeft: '7rem', width: '40rem'}}>
             Welcome Back, Please enter your detail
           </span>
         
@@ -134,7 +131,7 @@ function Login() {
              required
             />
             <img
-             src={showPassword ? bxShow : bxHide}
+             src={showPassword ? "/bx-show.png" : "/bx-hide.png"}
              alt="Toggle Visibility"
              onClick={togglePasswordVisibility}
              className="password-toggle-icon2"
@@ -154,7 +151,7 @@ function Login() {
   </div>
 
   {/* Password link */}
-  <div style={{ fontSize: '0.8rem', marginLeft: '21.3rem' }} className='forgot'>
+  <div style={{ fontSize: '0.9rem', marginLeft: '21.3rem' }} className='forgot'>
     <a href="./request-password-reset-otp">Forgot password</a>
   </div>
 
@@ -169,7 +166,7 @@ function Login() {
       </div>
       <div className="login-image">
         <img
-          src={image6}
+          src="/image 6.png"
           alt="Login Illustration"
           className="img-fluid"
           style={{

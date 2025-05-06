@@ -17,6 +17,8 @@
 .map-section {
     padding: 4rem 2rem;
     background-color: #ffffff;
+    position: relative;
+    top: -50rem;
     transition: all 0.3s ease;
   }
   

@@ -14,8 +14,7 @@ function FeaturesSection({ isDarkMode }) {
         <div className="features">
           <div className={`feature-item ${isDarkMode ? 'dark' : ''}`}>
             <img 
-              className="feature-icon" 
-              src={isDarkMode ? "./assets/image/tick-dark.png" : "./assets/image/tick.png"} 
+              className="feature-icon" src="/tick.png" 
               alt="Authentic" 
             />
             <h3>Authentic Content Sharing Made Easy</h3>
@@ -27,7 +26,7 @@ function FeaturesSection({ isDarkMode }) {
           <div className={`feature-item ${isDarkMode ? 'dark' : ''}`}>
             <img 
               className="feature-icon" 
-              src={isDarkMode ? "./assets/image/FirstAid (1)-dark.png" : "./assets/image/FirstAid (1).png"} 
+              src="./FirstAid (1).png" 
               alt="Emergency" 
             />
             <h3>Emergency Assistance Resource</h3>
@@ -39,7 +38,7 @@ function FeaturesSection({ isDarkMode }) {
           <div className={`feature-item ${isDarkMode ? 'dark' : ''}`}>
             <img 
               className="feature-icon" 
-              src={isDarkMode ? "./assets/image/MapPinArea-dark.png" : "./assets/image/MapPinArea.png"} 
+              src="./MapPinArea.png" 
               alt="Location" 
             />
             <h3>Location-Specific Content You Can Trust</h3>

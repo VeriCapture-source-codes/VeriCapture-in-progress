@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // import useNavigate
 import { apiRequest } from './utils/api';
 import './Register.css'; // Import CSS file for styling
-import image6 from './assets/image/image6.png'; // Import image
-import bxHide from './assets/image/bx-hide.png'; // Import image
-import bxShow from './assets/image/bx-show.png'; // Import image
-import vericapture from './assets/image/vericapture.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 function Register() {
   const navigate = useNavigate(); // initialize navigate
@@ -87,7 +82,7 @@ function Register() {
    <div className="register-container">
    <div class="responsive-row">
      <img
-        src={image6}
+        src="/image6.png"
         alt="Login Illustration"
         className="img-fluid"
         style={{
@@ -100,7 +95,7 @@ function Register() {
       />
      <div className="register-form">
      <img
-        src={vericapture}
+        src="/DataForVericapture2.png"
         alt="vericapture logo"
         className="vericapture-logo"
         style={{
@@ -138,13 +133,13 @@ function Register() {
            onChange={handleChange}
            required
           />
-          <img
-           src={showPassword ? bxShow : bxHide}
-           alt="Toggle Visibility"
-           onClick={togglePasswordVisibility}
-           className="password-toggle-icon"
-          />
-       </div>
+         <img
+          src={showPassword ? '/bx-show.png' : '/bx-hide.png'}
+          alt="Toggle Visibility"
+          onClick={togglePasswordVisibility}
+          className="password-toggle-icon"
+        />
+      </div>
 
        <div>
           <select name="country" className='country-select' value={form.country} onChange={handleChange} required>
@@ -188,7 +183,7 @@ function Register() {
           </div>
 
           {/* Password link */}
-          <div style={{ fontSize: '0.6rem', marginRight: '0rem', marginLeft: '0.2rem' }} className='forgot-password'>
+          <div style={{ fontSize: '0.7rem', marginRight: '0rem', marginLeft: '3.2rem' }} className='forgot-password'>
             <span>Forgot password? </span>
             <a href="./request-password-reset-otp">Change Password</a>
           </div>

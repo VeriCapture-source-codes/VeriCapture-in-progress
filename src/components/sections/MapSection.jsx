@@ -12,20 +12,14 @@ function MapSection({ isDarkMode }) {
             <button className={`map-button ${isDarkMode ? 'dark' : ''}`}>
               Explore 
               <img 
-                src={isDarkMode 
-                  ? "./assets/image/Vector (3)-dark.png" 
-                  : "./assets/image/Vector (3).png"
-                } 
+                src="/Vector3.png"
                 alt="arrow icon" 
               />
             </button>
           </div>
           <div className="map-location">
             <img 
-              src={isDarkMode 
-                ? "./assets/image/image15-dark.png" 
-                : "./assets/image/image15.png"
-              } 
+              src="./image15.png"
               alt="Map visualization" 
               className="map-image" 
             />

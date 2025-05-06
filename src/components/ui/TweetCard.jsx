@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import avatarLight from '/src/assets/image/Ellipse 2.png';
-import locationIconLight from '/src/assets/image/Vector (12).png';
-import tweetImageLight from '/src/assets/image/image.png';
 import './TweetCard.css'; 
 
 function TweetCard({ isDarkMode = false }) {
@@ -51,19 +48,20 @@ function TweetCard({ isDarkMode = false }) {
       <header className="tweet-header">
         <div className="user-info">
           <img 
-            src={avatarLight} 
+            src='/Ellipse 2.png' 
             alt="Profile" 
             className="user-avatar"
             onError={(e) => e.target.style.display = 'none'}
           />
           <div className="user-meta">
-            <h2>Kaycee Pastor</h2>
+            <h2 className='username'>Kaycee Pastor</h2>
             <div className="meta-details">
-              <span className='meta-time'>4hr ago</span>
-              <span className="location">
+              <span className='post-time'>4hr ago</span>
+              <span className="post-location">
                 <img 
-                  src={locationIconLight} 
-                  alt="" 
+                  src='/Vector (12).png' 
+                  alt="location" 
+                  className='location-icon'
                   aria-hidden="true"
                 />
                 Awka Anambra
@@ -85,7 +83,7 @@ function TweetCard({ isDarkMode = false }) {
           </span>
         </p>
         <img 
-          src={tweetImageLight} 
+          src='/image.png'
           alt="Traffic incident" 
           className="tweet-image"
         />

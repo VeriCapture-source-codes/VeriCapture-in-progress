@@ -1,163 +1,22 @@
-* {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-  }
-  :root {
-    --primary: #007bff;
-    --primary-dark: #003570;
-    --highlight: #36ad36;
-    --warning: #dacc0e;
-    --danger: #dc3545;
-    --text: #333;
-    --muted: #6c757d;
-    --border: #e1e4e8;
-    --white: #fff;
-    --max-width: 1200px;
-    --section-padding: 0rem 0.5rem;
-  }
-  /* Add this to your CSS */
-  body {
-    width: 100%;
-    min-width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    font-family: "Open Sans", sans-serif;
-    background-color: #e7e7e7;
-    color: #333;
-    text-align: center;
-    line-height: 1.6;
-  }
+
+ 
   
-  /* Basic Styling for Desktop */
-  .navigation {
-    position: fixed;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: 17vh;
-    z-index: 1000;
-    background-color: #ffffff;
-    transition: 0.5s;
-  }
+ 
+ 
+ 
   
-  .logo img{
-    display: flex;
-    width: 12rem;
-    height: 3rem;
-    margin-top: 20px;
-    margin-left: 32px;
-  }
+ 
+ 
+ 
   
-  .nav-links {
-    display: flex;
-    list-style: none;
-    column-gap: 0px;
-    width: 80%;
-    margin-top: -48px;
-    margin-left: 250px;
-  }
-  .nav-links li {
-    position: relative;
-  }
-  .nav-links a {
-    font-family: system-ui;
-    text-decoration: none;
-    color: #000000;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 5px;
-    width: 100%;
-    position: relative; /* the ::after pseudo-element is positioned relative to the <a> tag */
-  }
-  /* Apply the underline effect to all <a> tags except the one containing the "Sign up" button */
-   .nav-links a:not(.submit_btn-container)::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #000000;
-    transform-origin: right;
-    transition: 0.4s all linear;
-  }
-  /* show underline on hover and for the active home link */
-   .nav-links a:hover::after,
-   .nav-links .active::after {
-    width: 100%;
-  }
   
-  /* Hide the checkbox by default */
-  .menu-toggle-checkbox {
-    display: none;
-  }
-  .menu-icon {
-    display: none; /* Hide menu icon on desktop */
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  .dark-mode-label {
-    display: flex;
-    margin-left: 30px;
-  }
-  #dark-mode-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin-top: 3px;
-    margin-left: 33px;
-    margin-bottom: 0px;
-    cursor: pointer;
-  }
-  /* Style for the "Sign up" button container */
-  .submit_btn-container {
-    text-decoration: none; /* Ensure no underline */
-  }
-  .submit_btn {
-    position: absolute;
-    align-items: right;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 8px 10px;
-    width: 6rem;
-    background-color: #7bffde;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    font-weight: 500;
-    top: 0.3rem;
-    left: 4rem;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  .submit_btn:hover{
-    background: #69f794;
-  }
+ 
+  
   /* Mobile styles */
   @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
     
-    .nav-links {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 70vw;
-      background: white;
-      flex-direction: column;
-      justify-content: center;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-    }
     
-    .nav-links.open {
-      transform: translateX(0);
-    }
+   
+    
+   
   }

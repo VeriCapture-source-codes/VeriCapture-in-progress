@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import DarkModeToggle from '../ui/DarkModeToggle';
 import './Navigation.css'; // Import your CSS file for styling
-import logoLight from '../../assets/image/DataForVericapture2.png';
-import logoDark from '../../assets/image/logo-dark.png';
+
 
 function Navigation({ isDarkMode, toggleDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ function Navigation({ isDarkMode, toggleDarkMode }) {
     <nav className="navigation">
       <Link to="/" className="logo" onClick={handleNavClick}>
       <img 
-          src={isDarkMode ? logoDark : logoLight} 
+          src={isDarkMode ? '/logo-dark.png' : '/Frame121.png'} 
           alt="VeriCapture logo"
           className="logo-image"
           onError={(e) => {

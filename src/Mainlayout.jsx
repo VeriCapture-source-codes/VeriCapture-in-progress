@@ -1,9 +1,9 @@
 import Navigation from './components/layout/Navigation';
 import MainContent from './components/sections/MainContent';
-import SubContent from './components/sections/SubContent';
-import MapSection from './components/sections/MapSection';  
 import TweetCard from './components/ui/TweetCard';
 import StatsSection from './components/sections/StatsSection';
+import SubContent from './components/sections/SubContent';
+import MapSection from './components/sections/MapSection';  
 import FeaturesSection from './components/sections/FeaturesSection';
 import Footer from './components/layout/Footer';
 
